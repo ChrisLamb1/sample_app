@@ -1,2 +1,11 @@
-<h1>Chapter 3 Sample App</h1>
-<p>This is a sample application for Chapter 3 of the Ruby On Rails Tutorial</p>
+<% provide(:title, 'Home') %>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sample App | <%= yield(:title) %></title>
+	</head>
+	<body>
+		<h1>Sample App</h1>
+		<p>This is a sample application for Chapter 3 of the Ruby On Rails Tutorial</p>
+	</body>
+</html>

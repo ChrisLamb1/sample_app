@@ -1,2 +1,16 @@
-<h1>About</h1>
-<p>This is a website that I am making for tutorial reasons. It's pretty cool, no?</p>
+<% provide(:title, 'About') %>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sample App | <%= yield(:title) %></title>
+	</head>
+	<body>
+		<h1>About</h1>
+		<p>
+			This is a website that I am making for tutorial reasons. It's pretty cool, no? 
+		</p>
+		<p>
+			Why not click <a href = "http://raistutorial.org/">here</a> to go see it?
+		</p>
+	</body>
+</html>
